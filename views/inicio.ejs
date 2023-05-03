@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= titulos[5] %></title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>DevFolio Bootstrap Portfolio Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="/images/favicon.png" rel="icon">
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main JS File -->
+    <link rel="stylesheet" href="/css/style2.css">
+  </head>
+  <body>
+      <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href=""><%= titulos[0] %></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          
+          <li><a class="nav-link scrollto" href="/portafolio">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="/portafolio/habilidades">Habilidades</a></li>
+          <li><a class="nav-link scrollto" href="/portafolio/contacto">Contactos</a></li>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  
+ 
+  <script src="/js/main.js"></script>
+  
+    
+
+  </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route bg-image" style="background-image: url(/images/hero-bg.jpg)">
+      <div class="overlay-itro"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <!--<p class="display-6 color-d">Hello, world!</p>-->
+            <h1 class="hero-title mb-4"><%= titulos[1] %></h1>
+            <a class="botonscr" href="#about"><%= titulos[2] %></a>
+            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Hero Section -->
+  
+    <main id="main">
+  
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img src="<%= imagen %>" class="img-fluid rounded b-shadow-a" alt="">
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                          <p><span class="title-s">Nombre: </span> <span><%= nombre %></span></p>
+                          <p><span class="title-s">Perfil: </span> <span><%= perfil %></span></p>
+                          <p><span class="title-s">Email: </span> <span><%= email %></span></p>
+                          <p><span class="title-s">Celular: </span> <span><%= celular %></span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-mf">
+                      <p class="title-s"><%= titulos[3] %></p>
+                      <span><%= lenguajes[0] %></span> <span class="pull-right">100%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span><%= lenguajes[1] %></span> <span class="pull-right">100%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span><%= lenguajes[2] %></span> <span class="pull-right">60%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <span><%= lenguajes[3] %></span> <span class="pull-right">80%</span>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          <%= titulos[4] %>
+                        </h5>
+                      </div>
+                      <p class="lead">
+                        <%= descripciones %>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End About Section -->
+        <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>FF</strong>. Todos los derechos reservados</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              By <a href="https://bootstrapmade.com/">TwoLF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  </body>
+</html>

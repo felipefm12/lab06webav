@@ -1,0 +1,149 @@
+/* Estilos generales del navbar */
+.s-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-logo {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .header-logo a {
+    display: inline-block;
+  }
+  
+  .header-logo img {
+    max-height: 50px;
+  }
+  
+  .header-nav-wrap {
+    flex: 2;
+  }
+  
+  .header-main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-main-nav li {
+    margin: 0 15px;
+  }
+  
+  .header-main-nav li a {
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .header-main-nav li a:hover {
+    color: #1a1aff;
+  }
+  
+  .header-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-social li {
+    margin: 0 10px;
+  }
+  
+  .header-social li a {
+    display: block;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .header-social li a:hover {
+    color: #1a1aff;
+  }
+  
+  .header-menu-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Estilos del navbar para pantallas pequeñas */
+    .s-header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .header-logo {
+      margin-bottom: 15px;
+    }
+  
+    .header-nav-wrap {
+      display: none;
+      margin-bottom: 15px;
+    }
+  
+    .header-menu-toggle {
+      display: block;
+      cursor: pointer;
+      color: #333;
+      font-size: 20px;
+    }
+  
+    .header-menu-toggle span {
+      display: none;
+    }
+  
+    .header-main-nav li {
+      margin: 10px 0;
+    }
+  
+    .header-main-nav li a {
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+  
+    .header-main-nav li.current a {
+      background-color: #1a1aff;
+      color: #fff;
+    }
+  
+    .header-main-nav li a:hover {
+      background-color: #1a1aff;
+      color: #fff;
+    }
+  
+    .header-menu-toggle:hover {
+      color: #1a1aff;
+    }
+  
+    .menu-show .header-nav-wrap {
+      display: block;
+    }
+  
+    .menu-show .header-menu-toggle span {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+  }
+  
